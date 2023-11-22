@@ -37,7 +37,7 @@ void removeKthCol(int matrix[][MAX_COLS], int rows, int& cols, int k) {
 }
 
 // Task 4
-void allocate(int* arr, int size) {
+void allocate(int*& arr, int size) {
 	arr = new int[size];
 }
 
