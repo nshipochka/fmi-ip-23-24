@@ -83,7 +83,7 @@ int main(){
     ```c++
     //Ако е указател:
     void f (int* a){
-        a = 5;
+        *a = 5;
     }
 
     int main(){
