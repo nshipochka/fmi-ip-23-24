@@ -5,6 +5,14 @@
 - Представяме си какво вършат тези подзадачи и как трябва да изглежда кода им
 - Пишем код
 
+## Visual Studio мрънка
+`strcpy` -> `strcpy_s`
+`strncpy` -> `strncpy_s`
+
+или 
+
+![Add _CRT_SECURE_NO_WARNINGS to preprocessor definitions](https://i.stack.imgur.com/EMnNi.png "Add _CRT_SECURE_NO_WARNINGS to preprocessor definitions")
+
 ## Задачи (от домашни/контролни/изпити)
 
 ### Задача 1
