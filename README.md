@@ -8,4 +8,4 @@
 [Линк към assignment за седмица №6 в Github Classroom](https://classroom.github.com/a/5TaEYGDM)  
 [Линк към assignment за седмица №7 в Github Classroom](https://classroom.github.com/a/ZTAks8Va)    
 [Линк към assignment за седмица №8 в Github Classroom](https://classroom.github.com/a/8mIWOzc1)    
-[Линк към assignment за седмица №9 в Github Classroom](https://classroom.github.com/a/qxfbCU94)
+[Линк към assignment за седмица №9 в Github Classroom](https://classroom.github.com/a/QXHvmhY8)
