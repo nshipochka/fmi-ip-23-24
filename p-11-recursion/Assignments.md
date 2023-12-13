@@ -4,7 +4,11 @@ bool rec(int a, int b) {
     return a < b || rec (a - 1, b + 1);
 }
 ```
-
+```c++
+bool rec(int a, int b) {
+    return rec (a - 1, b + 1) || a < b ;
+}
+```
 ```c++
 bool rec(size_t n) {
     if (n < 0)
