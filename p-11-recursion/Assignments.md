@@ -1,4 +1,33 @@
-## Какво ще изведе сегментът код?
+## Какъв е проблемът/какво ще изведе кодът?
+```c++
+bool rec(int a, int b) {
+    return a < b || rec (a - 1, b + 1);
+}
+```
+
+```c++
+bool rec(size_t n) {
+    if (n < 0)
+        return false;
+
+    return rec(n--);
+}
+```
+
+```c++
+int rec(int x) {
+    if(x == 0)
+        return 0;
+
+    if(x % 3)
+        return rec(x - 1) + 1;
+    
+    return rec(x - 1);
+}
+
+//main
+rec(15);
+```
 
 ## Задачи
 ### Задача 1
