@@ -122,7 +122,7 @@ void print_boolean_vectors(int n) {
 }
 
 // Задача 10
-bool valid_position(size_t x, size_t y, int** board, size_t size) {
+bool valid_position(int x, int y, int** board, size_t size) {
 	return (x >= 0 && x < size && y >= 0 && y < size
 		&& board[x][y] == -1);
 }
@@ -135,9 +135,9 @@ void print_solution(int** board, size_t size) {
 	}
 }
 
-bool knights_tour(size_t x, size_t y, int move_count, int** board, size_t size, size_t* xs, size_t* ys) {
+bool knights_tour(size_t x, size_t y, int move_count, int** board, size_t size, int* xs, int* ys) {
 	if (move_count == size * size) // ако сме стигнали края
-		return false;
+		return true;
 
 	for (int i = 0; i < 8; i++) {
 		int next_x = x + xs[i];
@@ -146,10 +146,10 @@ bool knights_tour(size_t x, size_t y, int move_count, int** board, size_t size, 
 		if (valid_position(next_x, next_y, board, size)) {
 			board[next_x][next_y] = move_count;
 
-			if (knights_tour(next_x, next_y, move_count + 1, board, size, xs, ys)) // ако сме стигналия края излизаме
+			if (knights_tour(next_x, next_y, move_count + 1, board, size, xs, ys)) // ако сме стигналия края, излизаме
 				return true;
 
-			// иначе, бактракваме
+			// иначе, коригираме каквото сме променили и изпробваме следващ вариант
 			board[next_x][next_y] = -1;
 		}
 	}
@@ -167,8 +167,8 @@ void knights_tour(size_t size) {
 	}
 
 	// Възможните ходове на коня: xs[i] съответства на ys[i]
-	size_t xs[8] = { 2, 1, -1, -2, -2, -1, 1, 2 };
-	size_t ys[8] = { 1, 2, 2, 1, -1, -2, -2, -1 };
+	int xs[8] = { 2, 1, -1, -2, -2, -1, 1, 2 };
+	int ys[8] = { 1, 2, 2, 1, -1, -2, -2, -1 };
 
 	// Поставяме първия ход 
 	board[0][0] = 0;
