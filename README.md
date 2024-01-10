@@ -12,3 +12,4 @@
 [Линк към assignment за седмица №11 в Github Classroom](https://classroom.github.com/a/63mtma7m)    
 [Линк към assignment за седмица №12 в Github Classroom](https://classroom.github.com/a/uou7U9En)      
 [Линк към assignment за седмица №13 в Github Classroom](https://classroom.github.com/a/3Owf1fF3)    
+[Линк към assignment за седмица №14 в Github Classroom](https://classroom.github.com/a/HXnAZXm4)
